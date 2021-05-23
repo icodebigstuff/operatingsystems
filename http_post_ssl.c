@@ -3,10 +3,7 @@
 // it. Compile this program via
 //
 // > gcc -Wall -g -o http_post_ssl http_post_ssl.c -lssl -lcrypto
-//
-// Experiment with running it without and with an integer parameter
-// between 1 and 101:
-//
+// and run such as:
 // > ./http_post_ssl 31
 //
 // > ./http_post_ssl 85
@@ -48,8 +45,8 @@ int main(int argc, char *argv[]) {
 
   printf("Host: %s\nFile: %s\n",hostname, hostfile);
 
-  // TODO: Use code similar to that in http_get_ssl.c to create a
-  // socket, connect it to a server, and create an encrypted version
+
+  // Create a socket, connect it to a server, and create an encrypted version
   // of the socket. Later code will use the variables 'sockfd' and
   // 'ssl_connection' for these as was done in http_get_ssl.c
   int ret;
@@ -92,7 +89,7 @@ int main(int argc, char *argv[]) {
   ////////////////////////////////////////////////////////////////////////////////
 
 
-  // TODO: Format the string `post_data[]` as
+  // Format the string `post_data[]` as
   //   quote_num=<NUM>
   // where <NUM> is the 1st command line argument; keep in mind that
   // argv[] elements are strings and that you do not need to do any error checking.
@@ -120,7 +117,7 @@ int main(int argc, char *argv[]) {
   printf("%s",request);
 
 
-  // TODO: Write the request[] to the `ssl_connection`.  Use the
+  //Write the request[] to the `ssl_connection`.  Use the
   // SSL_write() function which has identical arguments to the
   // standard write() system call.  Use strlen() to calculate the
   // length of the request.
@@ -130,7 +127,7 @@ int main(int argc, char *argv[]) {
 
 
 
-  // TODO: Receive response data and write() it to the screen. Use the
+  // Receive response data and write() it to the screen. Use the
   // `response[]` buffer below.  Use the SSL_read() function which has
   // identical semantics to read().  Note that responses can be
   // arbitrarily long so it is typical to use a loop to read()
