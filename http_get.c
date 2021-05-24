@@ -2,7 +2,6 @@
 // command line to retrieve a file. Does not allow for encrypted
 // connections so cannot access many modern web servers which require
 // HTTPS.
-// 
 // Examples:
 //
 // $> http_get beej.us /                                     # beej's site

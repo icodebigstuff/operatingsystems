@@ -1,7 +1,6 @@
 // http_get_ssl.c: same as http_get.c but uses the SSL library to
 // encrypt communications. Allows connections to modern servers that
 // require HTTPS to be used for communication.
-// 
 // Examples: see http_get.c
 //
 // based on SSL code present in

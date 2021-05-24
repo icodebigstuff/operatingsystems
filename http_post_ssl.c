@@ -1,7 +1,6 @@
 // http_post_ssl.c: Demosntrates the HTTP POST functionality which
 // allows a page to be accessed and some parameters passed to
 // it. Compile this program via
-//
 // > gcc -Wall -g -o http_post_ssl http_post_ssl.c -lssl -lcrypto
 // and run such as:
 // > ./http_post_ssl 31
